@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Primeiro Script #04</title>
+</head>
+<style>
+    body {
+        background-color: rgb(105, 105, 165);
+        color: white;
+        font: normal 20pt arial;
+    }
+    h1 {
+        color: rgb(255, 187, 0);
+        /*Comentário em css*/
+    }
+</style>
+<body>
+
+    <h1>Olá, Mundo!</h1>
+    <p>Me livrei da maldição.</p>
+    <!--Comentário em HTML-->
+    
+    <script>
+        var n1 = Number(prompt('Digite o primeiro número'))
+        var n2 = Number(prompt('Digite o segundo número'))
+        var soma = n1 + n2
+        //window.alert('A soma entre os números é: ' + soma) // usando concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}!`) // Usando Template String com Place Holder
+    </script>
+</body>
+</html>
