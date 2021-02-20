@@ -8,23 +8,35 @@
 </head>
 <style>
     body {
-        font: normal 2em arial;
+        font: normal 1em arial;
     }
 </style>
 <body>
+
+    <p>Tratamento de Dado</p>
     
     <script>
-        let nome = window.prompt('Qual é seu primeiro nome? ')
-        let sNome = window.prompt('Qual seu sobrenome? ')
-        let idade = window.prompt('Qual sua idade? ')
-        let profissao = window.prompt('Digite sua profissão ')
-        document.write(`Olá, <strong>${nome}</strong>,<strong>${snome}</strong>!`)
-        //document.write(`Sua idade é de <strong>${idade}</strong> anos.`)
-        //document.write(`Sua prossissão é: <strong>${profissao}</strong>.`)
-        //document.write(`Seu nome completo tem ${nome+snome.length()} letras.`)
-        //document.write(`Seu nome em maiúsculas é: &{nome//.toUpperCase()}`)
+      let nome = window.prompt('Digite seu nome:')
+      let res = window.alert(`Olá, ${nome}! Bem Vindo ao nosso cadastro`)
+      window.confirm('Podemos Começar? ')
+      let sNome = window.prompt(`Digite seu sobrenome:`)
+      let idade = window.prompt('Qual sua idade?')
+      let prof = window.prompt('Qual sua profissão?')
+      let sal = Number(window.prompt(`Quanto ganha um ${prof}?`))
+      let soma = nome + sNome
+      var n = Number(sal.value)
 
-        
+      document.write(`Segue a baixo os dados do cadastro: </br></br>`)
+      document.write(`Nome completo: ${nome} ${sNome}. </br>`)
+      document.write(`Idade: ${idade} anos </br>`)
+      document.write(`Profissão: ${prof} </br>`)
+      document.write(`Seu salário é de : ${sal} </br></br>`)
+      document.write('Curiosidades!</br>')
+      document.write(`Seu nome em letras maiúscula é ${nome.toUpperCase()}</br>`)
+      document.write(`Seu nome em letras minúscula é ${nome.toLowerCase()}</br>`)
+      document.write(`Seu primeiro nome tem ${nome.length} letras. </br>`)
+      document.write(`Seu sobrenome tem ${sNome.length}</br>`)
+      document.write(`Seu nome completo tem ${soma.length} letras`)  
     </script>
 </body>
 </html>
