@@ -1,2 +1,2 @@
-# CursoEmVideo js
+# CursoEmVideo JS
  curso javascript 
