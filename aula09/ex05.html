@@ -20,13 +20,25 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com o DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScrip</p>
-    <div>Clique em mim</div>
+    <div id="container">
+        <h1 class="title">Iniciando estudos com o DOM</h1>
+        <p class="p1">Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScrip</p>
+        <div>Clique em mim</div>
+    </div>
 
     <script>
-        window.document.write('Teste')
+
+        window.document.getElementById('container').style.fontFamily = 'Verdana'
+
+        var container = document.querySelector('#container').style.color='#f0f0f0'
+        
+        window.document.querySelector('.title').innerText='Trocando Título via DOM'
+
+        window.document.getElementsByClassName('p1')[0].style.color='red'
+
+        
+
     </script>
 </body>
 </html>
