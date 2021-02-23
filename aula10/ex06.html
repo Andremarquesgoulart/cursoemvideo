@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM - Aula 10</title>
+    <style>
+        #area {
+            font: normal 16pt Arial;
+            font-weight: 500;
+            letter-spacing: 2px;
+            background-color: rgb(255, 72, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area">
+        Interaja...
+    </div>
+    
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('mouseenter' , entrou)
+        a.addEventListener('mousedown' , mdown)
+        a.addEventListener('mouseup' , mup)
+        a.addEventListener('mouseout' , saiu)
+
+        function entrou() {
+            a.innerHTML = 'Entrou...'
+            a.style.background = 'green'
+            a.style.transition = '1s'
+        }
+
+        function mdown() {
+            a.innerHTML = 'Clicou...'
+        }
+
+        function mup() {
+            a.innerHTML = 'Soltou...'
+        }
+
+        function saiu() {
+            a.innerHTML = 'Saiu...'
+            a.style.background = 'rgb(255, 72, 0)'
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
