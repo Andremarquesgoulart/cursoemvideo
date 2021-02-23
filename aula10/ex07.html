@@ -12,36 +12,15 @@
         }
     </style>
 </head>
+
 <body>
-    <!--
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado: </div>
-    -->    
-    <script>
-        /*
-        function somar() {
-            var txtn1 = window.document.getElementById('txtn1')
-            var txtn2 = window.document.getElementById('txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(txtn1.value)
-            var n2 = Number(txtn2.value)
-            var s = n1 + n2 
-            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}!`
-        }
-        */
-    </script>
 
-    
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn1" id="txtn1">
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
     <div id="res">Resultado: </div>
     
-
     <script>
         
         function somar() {
@@ -51,9 +30,10 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerText = `A Soma entre ${n1} + ${n2} = ${s}.`
+            res.innerText = `A Soma de ${n1} + ${n2} = ${s}.`
         }
-        
+
     </script>
+
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 1em arial;
+        }
+        #res {
+            line-height: 30px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+         Digite seu país: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resultado da pesquisa: </div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('txtpaís')
+            var res = window.document.getElementById('res')
+
+            if (pais.value == 'Brasil') {
+                res.innerHTML = `Se você vive no ${pais.value}, você é <strong>Brasileiro.</strong>`
+            } else {
+                res.innerHTML = `Se você é nascido em ${pais.value}, você é <strong>Estrangeiro.</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
