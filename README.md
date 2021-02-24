@@ -1,2 +1,0 @@
-# CursoEmVideo JS
- curso javascript 
