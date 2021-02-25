@@ -1,24 +1,32 @@
 body {
-    background: rgb(70, 142, 236);
-    font: normal 15pt arial;
+    font: normal 16pt arial;
+    background: rgb(95, 95, 228);
 }
 
 header {
-    color: #FFFFFF;
+    width: 470px;
+    color: white;
+    margin: auto;
+    border-radius: 3px;
     text-align: center;
 }
 
 section {
-    background: #FFFFFF;
-    border-radius: 3px;
-    padding: 15px;
-    width: 500px;
+    width: 470px;
+    background: white;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479);
+    text-align: center;
+    padding-top: 10px;
+}
+
+#msg {
+    color: rgb(95, 95, 228);
+    letter-spacing: 1px;
+    line-height: 40px;
 }
 
 footer {
-    color: #FFFFFF;
     text-align: center;
+    color: white;
     font-style: italic;
 }
