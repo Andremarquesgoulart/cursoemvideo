@@ -55,5 +55,4 @@ function verificar() {
     res.innerHTML = `Detectamos ${genero} com idade de ${idade} anos.`
     res.appendChild(img)
 
-
 }
