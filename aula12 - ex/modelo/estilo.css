@@ -9,24 +9,38 @@ header {
 }
 
 section {
+    width: 500px;
+    margin: auto;
+    font: normal 13pt arial;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
     background: #FFFFFF;
     border-radius: 3px;
     padding: 15px;
-    width: 500px;
-    margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479);
 }
 
-div {
-    font: normal 14pt arial;
+.btn-verificar {
+    padding: 5px 15px;
+    border-style: none;
+    background: rgb(70, 142, 236);
+    color: #FFFFFF;
+    border-radius: 3px;
 }
 
-#container {
+#res {
     text-align: center;
+    letter-spacing: 1px;
+    transition: 2s;
 }
+
 
 footer {
+    font: normal 17pt Segoe UI;
     color: #FFFFFF;
     text-align: center;
     font-style: italic;
+    font-weight: 600;
+    margin-top: 15px;
 }
