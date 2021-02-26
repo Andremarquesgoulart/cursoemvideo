@@ -16,9 +16,7 @@ function calcular() {
         for( var c = inicio; passo <= fim; c += passo) {
             res.innerHTML += `Contando ${c}`
         }
-       
-    } 
-    
+      } 
     } 
 
 
