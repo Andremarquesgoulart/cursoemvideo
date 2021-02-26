@@ -13,11 +13,12 @@ function calcular() {
     } else if (passo <= 0) {
         window.alert('Passo inválido. Considerando PASSO 1.')
     } else {
-        for(var c = passo; c <= fim; c =+ inicio)
-        c++
-    }
-    res.innerHTML = `Contando ${c}`
-
+        for( var c = inicio; passo <= fim; c += passo) {
+            res.innerHTML += `Contando ${c}`
+        }
+       
+    } 
+    
     } 
 
 
